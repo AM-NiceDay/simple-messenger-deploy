@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  client:
+    image: niceday/simple-messenger-client
+    ports:
+     - "80:80"
+  api:
+    image: niceday/simple-messenger-api
+  redis:
+    image: redis:alpine
+  mongo:
+    image: mongo
