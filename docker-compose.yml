@@ -7,6 +7,8 @@ services:
      - "80:80"
   api:
     image: niceday/simple-messenger-api
+    environment:
+      NODE_ENV: production
   redis:
     image: redis:alpine
   mongo:
